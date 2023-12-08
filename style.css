@@ -2,7 +2,6 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .container {
@@ -10,41 +9,144 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+#main {
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+    background-color:  rgba(50, 50, 50, 0.8);
+}
 
 header {
-    background-image: url("https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2356853556C27BD133");
     background-size: cover;
     color: #fff;
+    height: 550px;
     text-align: center;
-    padding: 50px 0;
 }
 
-header h1 {
-    margin: 0;
+#top_menu {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: white;
 }
 
-header p {
-    margin: 10px 0;
+#top_menu div {
+	margin-right: 20px;
+	font-size: 20px;
+	display: inline-block;
 }
 
-section {
-    padding: 40px 0;
+#top_menu #logo {
+	font-size: 28px;
+	margin-right: 600px;
+	padding: 10px;
 }
 
-h2 {
-    color: #333;
+.text_box {
+	font-size: 50px;
+	font-family: 'Black Han Sans', sans-serif;
+	padding: 100px 400px 0 400px;
 }
 
-.project {
-    margin-bottom: 20px;
+.text_box .text{
+	padding: 5px;
+	font-family: 'Arial', sans-serif;
+	font-weight: normal;
+	font-size: 18px;
 }
+
+.blink {
+  animation: blink 0.8s infinite;
+  font-size: 1.5rem;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+a:visited {font-weight: bold; color: rgba(50, 50, 50, 0.8); text-decoration: none;}
+a:link {font-weight: bold; color: rgba(50, 50, 50, 0.8); text-decoration: none;}
+a:hover {font-weight: bold; color: white; text-decoration: none;}
+a:active {font-weight: bold; color: white; text-decoration: none;}
+
+.title {
+	font-size: 40px;
+	text-align: center;
+	font-family: 'Black Han Sans', sans-serif;
+}
+
+#about #my {
+	margin-left: 180px;
+	margin-right: 50px;
+	width: 200px;
+	display: inline-block;
+}
+#about #my img {
+	width: 200px;
+}
+#about #info {
+	display: inline-block;
+}
+#about #info img{
+	margin-right: 20px; 
+}
+#about #info span{
+	font-size: 18px;
+}
+#about #info li {
+	list-style-type: none;
+	padding: 5px;
+}
+
+#skilset {
+	background-color: #f9c51d;
+	height: 700px;
+}
+
+#skilset img {
+	height: 50px;
+}
+
+#projects {
+	background-color: #1d809f;
+	height: auto;
+	padding-bottom: 50px;
+}
+#projects #pjbox {
+	border-radius: 30px;
+	background-color: white;
+	width: 1000px;
+	height: 800px;
+	margin: 0 auto;
+}
+#projects .date {
+	text-align: center;
+	color: #aaaaaa;
+}
+#projects #pjimg {
+	padding: 100px 50px 30px 70px;
+	width: 400px;
+	display: inline-block;
+}
+#projects #pjdetail {
+	display: inline-block;
+	width: 400px;
+	height: 500px;
+}
+
+#projects a:visited {font-weight: bold; color: rgba(50, 50, 50, 0.8); text-decoration: none;}
+#projects a:link {font-weight: bold; color: rgba(50, 50, 50, 0.8); text-decoration: none;}
+#projects a:hover {font-weight: bold; color: black; text-decoration: none;}
+#projects a:active {font-weight: bold; color: black; text-decoration: none;}
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }

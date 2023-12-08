@@ -4,45 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Your Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Soomin Portfolio</title>
 </head>
 <body>
-
     <header>
-        <div class="container">
-            <h1>Your Name</h1>
-            <p>Web Developer</p>
+        <div id="main">
+        	<div id="top_menu">
+        		<div id="logo"><a href="#main">Portfolio</a></div>
+        		<div><a href="#about">about</a></div>
+        		<div><a href="#skilset">skils</a></div>
+        		<div><a href="#projects">projects</a></div>
+        	</div>
+            <div class="text_box" data-trigger>
+            	<span>- 김수민 -</span><br>
+            	<span>웹 개발자 포트폴리오</span><br>
+            	<hr>
+			</div>
+			<span class="text"></span><span class="blink">|</span>
         </div>
     </header>
 
     <section id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here.</p>
+            <h2 class="title">ABOUT ME</h2>
+            <div>
+            	<div id="my"><img src="김수민b.jpg"></div>
+            	<div id="info">
+            		<ul>
+            			<li>
+		            		<img width="40" height="40" src="https://img.icons8.com/ios-glyphs/50/user--v1.png" alt="user--v1"/>
+	            			<span>김수민</span>
+            			</li>
+            			<li>
+		            		<img width="40" height="40" src="https://img.icons8.com/ios-filled/50/1A1A1A/birth-date.png" alt="birth-date"/>
+	            			<span>1993.03.04</span>
+            			</li>
+            			<li>
+		            		<img width="40" height="40" src="https://img.icons8.com/ios-filled/50/1A1A1A/address.png" alt="address"/>
+	            			<span>경기도 성남시</span>
+            			</li>
+            			<li>
+		            		<img width="40" height="40" src="https://img.icons8.com/ios-filled/50/1A1A1A/phone.png" alt="phone"/>
+	            			<span>010-5930-0334</span>
+            			</li>
+            			<li>
+		            		<img width="40" height="40" src="https://img.icons8.com/ios-filled/50/1A1A1A/mail.png" alt="mail"/>
+	            			<span>rlatnals0334@gmail.com</span>
+            			</li>
+            		</ul>
+            	</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skilset">
+        <div class="container">
+            <h2 class="title">SKILS</h2>
+            <div>
+            	<h2>Frontend</h2>
+	            	<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+	            	<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+	            	<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+	            	<img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
+            	<h2>Backend</h2>
+	            	<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white">
+	            	<img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white">
+            	<h2>Tools</h2>
+	            	<img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
+            	<h2>Etc</h2>
+	            	<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+            </div>
         </div>
     </section>
 
     <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
+       <div class="container">
+            <h2 class="title">PROJECTS</h2>
+            <div id="pjbox">
+            	<div class="title" style="padding: 20px 0 0 0;">도서판매 사이트</div>
+            	<div class="date">2023.10.24 ~ 2023.12.15 (5人 팀프로젝트)</div>
+            	<div id="pjimg"><img style="width: 100%; height: 500px; border: 1px solid black;" src="book.png"></div>
+            	<div id="pjdetail">
+            		<span style="display: inline-block;">
+            			<b>기본적인 도서를 종류별로 온라인 판매하는 사이트</b>입니다.
+            			처음 개발하는 사이트이고 간단하게 판매기능 및 상품관리, 회원관리를 구현하기 위해 개발하였습니다.
+            			<br><br>
+            			SpringBoot를 이용하여 Oracle연동 및 PG사 결제 시스템을 연결하여
+            			최종 결제까지 완료되도록 구현하였습니다.
+            			<br><br>
+            			개인적으로 호기심이 생겨 웹소켓을 활용한 관리자와 유저의 1:N채팅을 
+            			구현할때는 수업내용이 아닌 독학으로 진행을해서 어려움이 많았지만
+            			완성하고 났을때 큰 기쁨을 느낄 수 있었습니다.
+            			<br><br>
+            			java를 통해 MVC모델을 기반으로 구현하여 그 흐름을 구성하고 
+            			JS를 통한 여러가지 기능의 경험, AJAX를 활용한 비동기 데이터 처리등 
+            			많은 경험을 할 수 있었습니다.
+            		</span>
+            		<hr>
+            			<b>작업내용</b>
+            			<ul>
+	            			<li>상품등록, 삭제, 수정등 상품관리 전반</li>
+	            			<li>상품리스트 가격순 정렬</li>
+	            			<li>전반적인 css</li>
+	            			<li>웹소켓을 이용한 실시간 문의채팅기능</li>
+	            			<li>결제시스템 연결</li>
+            			</ul>
+            			<b>GitHub : <a href="https://github.com/tpkimmj/BookMarket.git">https://github.com/tpkimmj/BookMarket.git</a></b>
+            	</div>
             </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
-            </div>
-            <!-- Add more projects as needed -->
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn Profile</a></p>
-            <!-- Add more contact information or links as needed -->
         </div>
     </section>
 
