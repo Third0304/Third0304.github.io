@@ -46,7 +46,15 @@ header {
 .text_box {
 	font-size: 50px;
 	font-family: 'Black Han Sans', sans-serif;
-	padding: 100px 400px 0 400px;
+	padding: 100px 0 0 0 ;
+}
+.text_box hr {
+	width: 500px;
+}
+
+.text_box span {
+	width: 100%;
+	display: inline-block;
 }
 
 .text_box .text{
@@ -73,6 +81,7 @@ a:hover {font-weight: bold; color: white; text-decoration: none;}
 a:active {font-weight: bold; color: white; text-decoration: none;}
 
 .title {
+	width: 1000px;
 	font-size: 40px;
 	text-align: center;
 	font-family: 'Black Han Sans', sans-serif;
@@ -102,7 +111,7 @@ a:active {font-weight: bold; color: white; text-decoration: none;}
 }
 
 #skilset {
-	background-color: #f9c51d;
+	background-color: #D1B2FF;
 	height: 700px;
 }
 
@@ -111,27 +120,27 @@ a:active {font-weight: bold; color: white; text-decoration: none;}
 }
 
 #projects {
-	background-color: #1d809f;
+	background-color: #4374D9;
 	height: auto;
 	padding-bottom: 50px;
 }
-#projects #pjbox {
+#projects .pjbox {
 	border-radius: 30px;
 	background-color: white;
 	width: 1000px;
 	height: 800px;
-	margin: 0 auto;
+	margin: 80px auto;
 }
 #projects .date {
 	text-align: center;
 	color: #aaaaaa;
 }
-#projects #pjimg {
+#projects .pjimg {
 	padding: 100px 50px 30px 70px;
 	width: 400px;
 	display: inline-block;
 }
-#projects #pjdetail {
+#projects .pjdetail {
 	display: inline-block;
 	width: 400px;
 	height: 500px;
