@@ -49,7 +49,9 @@ header {
 	padding: 100px 0 0 0 ;
 }
 .text_box hr {
+	margin: 0 auto;
 	width: 500px;
+	margin-bottom: 30px;
 }
 
 .text_box span {
@@ -88,12 +90,14 @@ a:active {font-weight: bold; color: white; text-decoration: none;}
 }
 
 #about #my {
+	margin-top: 30px;
 	margin-left: 180px;
 	margin-right: 50px;
 	width: 200px;
 	display: inline-block;
 }
 #about #my img {
+	float: left;
 	width: 200px;
 }
 #about #info {
@@ -115,14 +119,22 @@ a:active {font-weight: bold; color: white; text-decoration: none;}
 	height: 750px;
 }
 
+#skilset .skbox h2 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin: 5px;
+}
+
 #skilset .skbox {
 	background-color: white;
 	padding: 20px;
 	border: 1px solid none;
 	border-radius: 20px;
+	width: 1000px;
+	margin-top: 50px;
 }
 
 #skilset img {
+	margin: 5px;
 	height: 50px;
 }
 
@@ -136,18 +148,20 @@ a:active {font-weight: bold; color: white; text-decoration: none;}
 	background-color: white;
 	width: 1000px;
 	height: 800px;
-	margin: 0px auto 80px;
+	margin: 50px auto 80px;
 }
 #projects .date {
 	text-align: center;
 	color: #aaaaaa;
 }
 #projects .pjimg {
-	padding: 100px 50px 30px 70px;
+	margin: 50px;
+	float: left;
 	width: 400px;
 	display: inline-block;
 }
 #projects .pjdetail {
+	padding: 10px;
 	display: inline-block;
 	width: 400px;
 	height: 500px;
