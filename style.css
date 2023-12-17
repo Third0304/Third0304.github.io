@@ -111,8 +111,15 @@ a:active {font-weight: bold; color: white; text-decoration: none;}
 }
 
 #skilset {
-	background-color: #D1B2FF;
-	height: 700px;
+	background-color: #A0BAED;
+	height: 750px;
+}
+
+#skilset .skbox {
+	background-color: white;
+	padding: 20px;
+	border: 1px solid none;
+	border-radius: 20px;
 }
 
 #skilset img {
@@ -120,7 +127,7 @@ a:active {font-weight: bold; color: white; text-decoration: none;}
 }
 
 #projects {
-	background-color: #4374D9;
+	background-color: #BCE9B7;
 	height: auto;
 	padding-bottom: 50px;
 }
@@ -129,7 +136,7 @@ a:active {font-weight: bold; color: white; text-decoration: none;}
 	background-color: white;
 	width: 1000px;
 	height: 800px;
-	margin: 80px auto;
+	margin: 0px auto 80px;
 }
 #projects .date {
 	text-align: center;
